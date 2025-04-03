@@ -1,0 +1,13 @@
+[package]
+name = "control-users"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = { version = "4.3.0", features = ["openssl"] }
+diesel = { version = "2.2.8", features = ["postgres", "r2d2", "uuid", "serde_json"] }
+dotenv = "0.15.0"
+serde = { version = "1.0.148", features = ["derive", "serde_derive"] }
+diesel_migrations = "2.1"
+env_logger = "0.10.0"
+chrono = {version = "0.4.19", features=["serde"]}
